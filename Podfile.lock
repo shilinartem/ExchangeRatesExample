@@ -1,0 +1,31 @@
+PODS:
+  - Expecta (1.0.3)
+  - Objection (1.6.1)
+  - OCHamcrest (4.3.0)
+  - OCMockito (2.0.1):
+    - OCHamcrest (~> 4.0)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI (= 2.3.1)
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - Specta (1.0.4)
+
+DEPENDENCIES:
+  - Expecta
+  - Objection
+  - OCMockito
+  - ReactiveCocoa (~> 2.3.1)
+  - Specta
+
+SPEC CHECKSUMS:
+  Expecta: 9d1bff6c8b0eeee73a166a2ee898892478927a15
+  Objection: ed03f2219cb22d2b5b893114219fe6c7e3263bde
+  OCHamcrest: cd63d27f48a266d4412c0b295b01b8f0940efa81
+  OCMockito: f92ad4c6fac2841a88558879cfe517c40aebf91e
+  ReactiveCocoa: 334468a83b2c5f669f7cfb9a084415ee23219b4f
+  Specta: 69bb134672aae190a1379ff91df07dad8dd1f869
+
+COCOAPODS: 0.38.2
