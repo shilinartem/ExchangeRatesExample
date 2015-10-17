@@ -7,43 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3775D8E01BD2DDAC00801F0B /* VMAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8DF1BD2DDAC00801F0B /* VMAPI.m */; };
+		3775D8E31BD2DDBD00801F0B /* VMAPIAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8E21BD2DDBD00801F0B /* VMAPIAdapter.m */; };
+		3775D8E61BD2DE1100801F0B /* VMExchangeFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8E51BD2DE1100801F0B /* VMExchangeFacade.m */; };
+		3775D8EB1BD2DE6800801F0B /* VMHomeScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8EA1BD2DE6800801F0B /* VMHomeScreenViewModel.m */; };
+		3775D8EE1BD2DE8100801F0B /* VMHomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8ED1BD2DE8100801F0B /* VMHomeScreenViewController.m */; };
 		378AE8FC1BD190EC00B46355 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 378AE8FB1BD190EC00B46355 /* main.m */; };
 		378AE8FF1BD190EC00B46355 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 378AE8FE1BD190EC00B46355 /* AppDelegate.m */; };
-		378AE9021BD190EC00B46355 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378AE9011BD190EC00B46355 /* ViewController.m */; };
 		378AE9051BD190EC00B46355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378AE9031BD190EC00B46355 /* Main.storyboard */; };
 		378AE9071BD190EC00B46355 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378AE9061BD190EC00B46355 /* Images.xcassets */; };
 		378AE90A1BD190EC00B46355 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378AE9081BD190EC00B46355 /* LaunchScreen.xib */; };
-		378AE9161BD190ED00B46355 /* ExchangeRatesExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 378AE9151BD190ED00B46355 /* ExchangeRatesExampleTests.m */; };
 		38FE48C16E4EA8A6F1C9B910 /* libPods-ExchangeRatesExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EE58C68380C800609C2165 /* libPods-ExchangeRatesExample.a */; };
-		EC658BF02D147C99137FC293 /* libPods-ExchangeRatesExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD9DF07058C19B8A5056B65 /* libPods-ExchangeRatesExampleTests.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		378AE9101BD190ED00B46355 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 378AE8EE1BD190EC00B46355 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 378AE8F51BD190EC00B46355;
-			remoteInfo = ExchangeRatesExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0CEECB9785BF5F9A5CD2BE9C /* Pods-ExchangeRatesExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRatesExampleTests/Pods-ExchangeRatesExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		19EE58C68380C800609C2165 /* libPods-ExchangeRatesExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExchangeRatesExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3775D8DE1BD2DDAC00801F0B /* VMAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMAPI.h; sourceTree = "<group>"; };
+		3775D8DF1BD2DDAC00801F0B /* VMAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMAPI.m; sourceTree = "<group>"; };
+		3775D8E11BD2DDBD00801F0B /* VMAPIAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMAPIAdapter.h; path = Adapters/VMAPIAdapter.h; sourceTree = "<group>"; };
+		3775D8E21BD2DDBD00801F0B /* VMAPIAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMAPIAdapter.m; path = Adapters/VMAPIAdapter.m; sourceTree = "<group>"; };
+		3775D8E41BD2DE1100801F0B /* VMExchangeFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMExchangeFacade.h; path = Facades/VMExchangeFacade.h; sourceTree = "<group>"; };
+		3775D8E51BD2DE1100801F0B /* VMExchangeFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMExchangeFacade.m; path = Facades/VMExchangeFacade.m; sourceTree = "<group>"; };
+		3775D8E91BD2DE6800801F0B /* VMHomeScreenViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMHomeScreenViewModel.h; path = Controllers/VMHomeScreenViewController/VMHomeScreenViewModel.h; sourceTree = "<group>"; };
+		3775D8EA1BD2DE6800801F0B /* VMHomeScreenViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMHomeScreenViewModel.m; path = Controllers/VMHomeScreenViewController/VMHomeScreenViewModel.m; sourceTree = "<group>"; };
+		3775D8EC1BD2DE8100801F0B /* VMHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMHomeScreenViewController.h; path = Controllers/VMHomeScreenViewController/VMHomeScreenViewController.h; sourceTree = "<group>"; };
+		3775D8ED1BD2DE8100801F0B /* VMHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMHomeScreenViewController.m; path = Controllers/VMHomeScreenViewController/VMHomeScreenViewController.m; sourceTree = "<group>"; };
 		378AE8F61BD190EC00B46355 /* ExchangeRatesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRatesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378AE8FA1BD190EC00B46355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		378AE8FB1BD190EC00B46355 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		378AE8FD1BD190EC00B46355 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		378AE8FE1BD190EC00B46355 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		378AE9001BD190EC00B46355 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		378AE9011BD190EC00B46355 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		378AE9041BD190EC00B46355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		378AE9061BD190EC00B46355 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		378AE9091BD190EC00B46355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		378AE90F1BD190ED00B46355 /* ExchangeRatesExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeRatesExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		378AE9141BD190ED00B46355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		378AE9151BD190ED00B46355 /* ExchangeRatesExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangeRatesExampleTests.m; sourceTree = "<group>"; };
 		7D703A24A8B171B7ED972132 /* Pods-ExchangeRatesExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRatesExample/Pods-ExchangeRatesExample.debug.xcconfig"; sourceTree = "<group>"; };
 		7DD9DF07058C19B8A5056B65 /* libPods-ExchangeRatesExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExchangeRatesExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD993422E1232553FB4B52C1 /* Pods-ExchangeRatesExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRatesExample/Pods-ExchangeRatesExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,22 +56,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		378AE90C1BD190ED00B46355 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC658BF02D147C99137FC293 /* libPods-ExchangeRatesExampleTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3775D8E71BD2DE1E00801F0B /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				3775D8E41BD2DE1100801F0B /* VMExchangeFacade.h */,
+				3775D8E51BD2DE1100801F0B /* VMExchangeFacade.m */,
+			);
+			name = Facades;
+			sourceTree = "<group>";
+		};
+		3775D8E81BD2DE2700801F0B /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				3775D8E11BD2DDBD00801F0B /* VMAPIAdapter.h */,
+				3775D8E21BD2DDBD00801F0B /* VMAPIAdapter.m */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
+		3775D8EF1BD2DE8800801F0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3775D8F01BD2DE9100801F0B /* VMHomeScreenViewController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3775D8F01BD2DE9100801F0B /* VMHomeScreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3775D8E91BD2DE6800801F0B /* VMHomeScreenViewModel.h */,
+				3775D8EA1BD2DE6800801F0B /* VMHomeScreenViewModel.m */,
+				3775D8EC1BD2DE8100801F0B /* VMHomeScreenViewController.h */,
+				3775D8ED1BD2DE8100801F0B /* VMHomeScreenViewController.m */,
+			);
+			name = VMHomeScreenViewController;
+			sourceTree = "<group>";
+		};
 		378AE8ED1BD190EC00B46355 = {
 			isa = PBXGroup;
 			children = (
 				378AE8F81BD190EC00B46355 /* ExchangeRatesExample */,
-				378AE9121BD190ED00B46355 /* ExchangeRatesExampleTests */,
 				378AE8F71BD190EC00B46355 /* Products */,
 				E26F75092A82DD9244AE14EF /* Pods */,
 				F2CB6698F0E77BF8182F2801 /* Frameworks */,
@@ -85,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				378AE8F61BD190EC00B46355 /* ExchangeRatesExample.app */,
-				378AE90F1BD190ED00B46355 /* ExchangeRatesExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,10 +117,13 @@
 		378AE8F81BD190EC00B46355 /* ExchangeRatesExample */ = {
 			isa = PBXGroup;
 			children = (
+				3775D8E71BD2DE1E00801F0B /* Facades */,
+				3775D8E81BD2DE2700801F0B /* Adapters */,
+				3775D8EF1BD2DE8800801F0B /* Controllers */,
+				3775D8DE1BD2DDAC00801F0B /* VMAPI.h */,
+				3775D8DF1BD2DDAC00801F0B /* VMAPI.m */,
 				378AE8FD1BD190EC00B46355 /* AppDelegate.h */,
 				378AE8FE1BD190EC00B46355 /* AppDelegate.m */,
-				378AE9001BD190EC00B46355 /* ViewController.h */,
-				378AE9011BD190EC00B46355 /* ViewController.m */,
 				378AE9031BD190EC00B46355 /* Main.storyboard */,
 				378AE9061BD190EC00B46355 /* Images.xcassets */,
 				378AE9081BD190EC00B46355 /* LaunchScreen.xib */,
@@ -110,23 +137,6 @@
 			children = (
 				378AE8FA1BD190EC00B46355 /* Info.plist */,
 				378AE8FB1BD190EC00B46355 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		378AE9121BD190ED00B46355 /* ExchangeRatesExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				378AE9151BD190ED00B46355 /* ExchangeRatesExampleTests.m */,
-				378AE9131BD190ED00B46355 /* Supporting Files */,
-			);
-			path = ExchangeRatesExampleTests;
-			sourceTree = "<group>";
-		};
-		378AE9131BD190ED00B46355 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				378AE9141BD190ED00B46355 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -173,26 +183,6 @@
 			productReference = 378AE8F61BD190EC00B46355 /* ExchangeRatesExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		378AE90E1BD190ED00B46355 /* ExchangeRatesExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 378AE91C1BD190ED00B46355 /* Build configuration list for PBXNativeTarget "ExchangeRatesExampleTests" */;
-			buildPhases = (
-				5D4681F4B02B9A0BFC1FC632 /* Check Pods Manifest.lock */,
-				378AE90B1BD190ED00B46355 /* Sources */,
-				378AE90C1BD190ED00B46355 /* Frameworks */,
-				378AE90D1BD190ED00B46355 /* Resources */,
-				F67DC62974C5668911BE0C9E /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				378AE9111BD190ED00B46355 /* PBXTargetDependency */,
-			);
-			name = ExchangeRatesExampleTests;
-			productName = ExchangeRatesExampleTests;
-			productReference = 378AE90F1BD190ED00B46355 /* ExchangeRatesExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,10 +195,6 @@
 				TargetAttributes = {
 					378AE8F51BD190EC00B46355 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					378AE90E1BD190ED00B46355 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 378AE8F51BD190EC00B46355;
 					};
 				};
 			};
@@ -226,7 +212,6 @@
 			projectRoot = "";
 			targets = (
 				378AE8F51BD190EC00B46355 /* ExchangeRatesExample */,
-				378AE90E1BD190ED00B46355 /* ExchangeRatesExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,31 +227,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		378AE90D1BD190ED00B46355 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5D4681F4B02B9A0BFC1FC632 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		90BDE919E13F77A29237CDE3 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,21 +260,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F67DC62974C5668911BE0C9E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeRatesExampleTests/Pods-ExchangeRatesExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -319,29 +267,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378AE9021BD190EC00B46355 /* ViewController.m in Sources */,
+				3775D8E01BD2DDAC00801F0B /* VMAPI.m in Sources */,
+				3775D8E61BD2DE1100801F0B /* VMExchangeFacade.m in Sources */,
+				3775D8EE1BD2DE8100801F0B /* VMHomeScreenViewController.m in Sources */,
+				3775D8EB1BD2DE6800801F0B /* VMHomeScreenViewModel.m in Sources */,
 				378AE8FF1BD190EC00B46355 /* AppDelegate.m in Sources */,
 				378AE8FC1BD190EC00B46355 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		378AE90B1BD190ED00B46355 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				378AE9161BD190ED00B46355 /* ExchangeRatesExampleTests.m in Sources */,
+				3775D8E31BD2DDBD00801F0B /* VMAPIAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		378AE9111BD190ED00B46355 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 378AE8F51BD190EC00B46355 /* ExchangeRatesExample */;
-			targetProxy = 378AE9101BD190ED00B46355 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		378AE9031BD190EC00B46355 /* Main.storyboard */ = {
@@ -399,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -437,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ExchangeRatesExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -462,44 +399,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ExchangeRatesExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		378AE91D1BD190ED00B46355 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CEECB9785BF5F9A5CD2BE9C /* Pods-ExchangeRatesExampleTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExchangeRatesExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeRatesExample.app/ExchangeRatesExample";
-			};
-			name = Debug;
-		};
-		378AE91E1BD190ED00B46355 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0AD62F1BB38EF98FA11A602 /* Pods-ExchangeRatesExampleTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExchangeRatesExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeRatesExample.app/ExchangeRatesExample";
 			};
 			name = Release;
 		};
@@ -520,15 +422,6 @@
 			buildConfigurations = (
 				378AE91A1BD190ED00B46355 /* Debug */,
 				378AE91B1BD190ED00B46355 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		378AE91C1BD190ED00B46355 /* Build configuration list for PBXNativeTarget "ExchangeRatesExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				378AE91D1BD190ED00B46355 /* Debug */,
-				378AE91E1BD190ED00B46355 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

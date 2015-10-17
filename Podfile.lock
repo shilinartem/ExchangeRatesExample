@@ -1,31 +1,42 @@
 PODS:
-  - Expecta (1.0.3)
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - Objection (1.6.1)
-  - OCHamcrest (4.3.0)
-  - OCMockito (2.0.1):
-    - OCHamcrest (~> 4.0)
-  - ReactiveCocoa (2.3.1):
-    - ReactiveCocoa/UI (= 2.3.1)
-  - ReactiveCocoa/Core (2.3.1):
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.3.1)
-  - ReactiveCocoa/UI (2.3.1):
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
-  - Specta (1.0.4)
 
 DEPENDENCIES:
-  - Expecta
+  - AFNetworking
   - Objection
-  - OCMockito
-  - ReactiveCocoa (~> 2.3.1)
-  - Specta
+  - ReactiveCocoa (~> 2.5)
 
 SPEC CHECKSUMS:
-  Expecta: 9d1bff6c8b0eeee73a166a2ee898892478927a15
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   Objection: ed03f2219cb22d2b5b893114219fe6c7e3263bde
-  OCHamcrest: cd63d27f48a266d4412c0b295b01b8f0940efa81
-  OCMockito: f92ad4c6fac2841a88558879cfe517c40aebf91e
-  ReactiveCocoa: 334468a83b2c5f669f7cfb9a084415ee23219b4f
-  Specta: 69bb134672aae190a1379ff91df07dad8dd1f869
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
 COCOAPODS: 0.38.2

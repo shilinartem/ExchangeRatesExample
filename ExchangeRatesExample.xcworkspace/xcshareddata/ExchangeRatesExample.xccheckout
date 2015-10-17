@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9B80C31A-CCC9-42C9-B74F-6788BAA31C83</string>
+	<string>C88D4374-F78F-48CD-89E6-32CAE7E032CA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ExchangeRatesExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/shilinartem/ExchangeRatesExample.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ExchangeRatesExample.xcodeproj</string>
+	<string>ExchangeRatesExample.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CE08FAE092A5A92F1C8A8E17CFAA3AF1DBB95511</key>
-		<string>../..</string>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/shilinartem/ExchangeRatesExample.git</string>
