@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376543AE1BD5793F0027D10D /* UIFont+VMFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 376543AD1BD5793F0027D10D /* UIFont+VMFont.m */; };
+		376543B41BD5850A0027D10D /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376543B11BD57A710027D10D /* Lato-Bold.ttf */; };
+		376543B51BD5850C0027D10D /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376543B01BD57A710027D10D /* Lato-Black.ttf */; };
+		376543B61BD5850E0027D10D /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376543B21BD57A710027D10D /* Lato-MediumItalic.ttf */; };
+		376543B71BD585100027D10D /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376543B31BD57A710027D10D /* Lato-Regular.ttf */; };
+		376543BB1BD595440027D10D /* VMMenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 376543BA1BD595440027D10D /* VMMenuViewModel.m */; };
+		376543BE1BD595540027D10D /* VMMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376543BD1BD595540027D10D /* VMMenuViewController.m */; };
+		376543C11BD595640027D10D /* VMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 376543C01BD595640027D10D /* VMMenuItem.m */; };
+		376543C61BD595980027D10D /* VMMenuTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 376543C51BD595980027D10D /* VMMenuTableCell.m */; };
+		376543CD1BD5ADA80027D10D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 376543CF1BD5ADA80027D10D /* Localizable.strings */; };
 		3775D8E01BD2DDAC00801F0B /* VMAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8DF1BD2DDAC00801F0B /* VMAPI.m */; };
 		3775D8F41BD3D3F100801F0B /* VMExchangeRateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8F31BD3D3F100801F0B /* VMExchangeRateModel.m */; };
 		3775D8F71BD3D85700801F0B /* VMAPIAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8F61BD3D85700801F0B /* VMAPIAdapter.m */; };
@@ -25,6 +35,24 @@
 /* Begin PBXFileReference section */
 		0CEECB9785BF5F9A5CD2BE9C /* Pods-ExchangeRatesExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRatesExampleTests/Pods-ExchangeRatesExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		19EE58C68380C800609C2165 /* libPods-ExchangeRatesExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExchangeRatesExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		376543AC1BD5793F0027D10D /* UIFont+VMFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+VMFont.h"; sourceTree = "<group>"; };
+		376543AD1BD5793F0027D10D /* UIFont+VMFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+VMFont.m"; sourceTree = "<group>"; };
+		376543B01BD57A710027D10D /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		376543B11BD57A710027D10D /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		376543B21BD57A710027D10D /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		376543B31BD57A710027D10D /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		376543B91BD595440027D10D /* VMMenuViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMMenuViewModel.h; sourceTree = "<group>"; };
+		376543BA1BD595440027D10D /* VMMenuViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMMenuViewModel.m; sourceTree = "<group>"; };
+		376543BC1BD595540027D10D /* VMMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMMenuViewController.h; sourceTree = "<group>"; };
+		376543BD1BD595540027D10D /* VMMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMMenuViewController.m; sourceTree = "<group>"; };
+		376543BF1BD595640027D10D /* VMMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMMenuItem.h; sourceTree = "<group>"; };
+		376543C01BD595640027D10D /* VMMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMMenuItem.m; sourceTree = "<group>"; };
+		376543C41BD595980027D10D /* VMMenuTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMMenuTableCell.h; sourceTree = "<group>"; };
+		376543C51BD595980027D10D /* VMMenuTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMMenuTableCell.m; sourceTree = "<group>"; };
+		376543C91BD5AD660027D10D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		376543CA1BD5AD660027D10D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		376543CE1BD5ADA80027D10D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		376543D01BD5ADAC0027D10D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3775D8DE1BD2DDAC00801F0B /* VMAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMAPI.h; sourceTree = "<group>"; };
 		3775D8DF1BD2DDAC00801F0B /* VMAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMAPI.m; sourceTree = "<group>"; };
 		3775D8F21BD3D3F100801F0B /* VMExchangeRateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMExchangeRateModel.h; sourceTree = "<group>"; };
@@ -65,6 +93,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		376543AB1BD578D70027D10D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				376543AC1BD5793F0027D10D /* UIFont+VMFont.h */,
+				376543AD1BD5793F0027D10D /* UIFont+VMFont.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		376543AF1BD57A1B0027D10D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				376543B01BD57A710027D10D /* Lato-Black.ttf */,
+				376543B11BD57A710027D10D /* Lato-Bold.ttf */,
+				376543B21BD57A710027D10D /* Lato-MediumItalic.ttf */,
+				376543B31BD57A710027D10D /* Lato-Regular.ttf */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		376543B81BD595130027D10D /* VMMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				376543C81BD595A20027D10D /* ViewModel */,
+				376543C71BD5959C0027D10D /* View */,
+			);
+			path = VMMenuViewController;
+			sourceTree = "<group>";
+		};
+		376543C21BD595750027D10D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3775D8F81BD3D86200801F0B /* VMHomeScreenViewController.h */,
+				3775D8F91BD3D86200801F0B /* VMHomeScreenViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		376543C31BD5957A0027D10D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3775D8FA1BD3D86200801F0B /* VMHomeScreenViewModel.h */,
+				3775D8FB1BD3D86200801F0B /* VMHomeScreenViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		376543C71BD5959C0027D10D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				376543BC1BD595540027D10D /* VMMenuViewController.h */,
+				376543BD1BD595540027D10D /* VMMenuViewController.m */,
+				376543C41BD595980027D10D /* VMMenuTableCell.h */,
+				376543C51BD595980027D10D /* VMMenuTableCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		376543C81BD595A20027D10D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				376543BF1BD595640027D10D /* VMMenuItem.h */,
+				376543C01BD595640027D10D /* VMMenuItem.m */,
+				376543B91BD595440027D10D /* VMMenuViewModel.h */,
+				376543BA1BD595440027D10D /* VMMenuViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		3775D8E71BD2DE1E00801F0B /* Facades */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +183,7 @@
 		3775D8EF1BD2DE8800801F0B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				376543B81BD595130027D10D /* VMMenuViewController */,
 				3775D8F01BD2DE9100801F0B /* VMHomeScreenViewController */,
 			);
 			path = Controllers;
@@ -94,10 +192,8 @@
 		3775D8F01BD2DE9100801F0B /* VMHomeScreenViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3775D8F81BD3D86200801F0B /* VMHomeScreenViewController.h */,
-				3775D8F91BD3D86200801F0B /* VMHomeScreenViewController.m */,
-				3775D8FA1BD3D86200801F0B /* VMHomeScreenViewModel.h */,
-				3775D8FB1BD3D86200801F0B /* VMHomeScreenViewModel.m */,
+				376543C21BD595750027D10D /* View */,
+				376543C31BD5957A0027D10D /* ViewModel */,
 			);
 			name = VMHomeScreenViewController;
 			sourceTree = "<group>";
@@ -123,6 +219,7 @@
 		378AE8ED1BD190EC00B46355 = {
 			isa = PBXGroup;
 			children = (
+				376543CF1BD5ADA80027D10D /* Localizable.strings */,
 				378AE8F81BD190EC00B46355 /* ExchangeRatesExample */,
 				378AE8F71BD190EC00B46355 /* Products */,
 				E26F75092A82DD9244AE14EF /* Pods */,
@@ -141,6 +238,8 @@
 		378AE8F81BD190EC00B46355 /* ExchangeRatesExample */ = {
 			isa = PBXGroup;
 			children = (
+				376543AF1BD57A1B0027D10D /* UI */,
+				376543AB1BD578D70027D10D /* Categories */,
 				3775D9021BD3DBB400801F0B /* Helpers */,
 				3775D8F11BD3D3C800801F0B /* Models */,
 				3775D8E71BD2DE1E00801F0B /* Facades */,
@@ -250,6 +349,11 @@
 				378AE9051BD190EC00B46355 /* Main.storyboard in Resources */,
 				378AE90A1BD190EC00B46355 /* LaunchScreen.xib in Resources */,
 				378AE9071BD190EC00B46355 /* Images.xcassets in Resources */,
+				376543B61BD5850E0027D10D /* Lato-MediumItalic.ttf in Resources */,
+				376543B71BD585100027D10D /* Lato-Regular.ttf in Resources */,
+				376543CD1BD5ADA80027D10D /* Localizable.strings in Resources */,
+				376543B51BD5850C0027D10D /* Lato-Black.ttf in Resources */,
+				376543B41BD5850A0027D10D /* Lato-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +397,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376543C61BD595980027D10D /* VMMenuTableCell.m in Sources */,
 				3775D8FD1BD3D86200801F0B /* VMHomeScreenViewModel.m in Sources */,
 				3775D8E01BD2DDAC00801F0B /* VMAPI.m in Sources */,
 				3775D8F41BD3D3F100801F0B /* VMExchangeRateModel.m in Sources */,
 				378AE8FF1BD190EC00B46355 /* AppDelegate.m in Sources */,
+				376543BE1BD595540027D10D /* VMMenuViewController.m in Sources */,
 				3775D8F71BD3D85700801F0B /* VMAPIAdapter.m in Sources */,
 				3775D8FC1BD3D86200801F0B /* VMHomeScreenViewController.m in Sources */,
 				3775D9051BD3DBFC00801F0B /* VMExchangeValuesHelper.m in Sources */,
+				376543BB1BD595440027D10D /* VMMenuViewModel.m in Sources */,
 				378AE8FC1BD190EC00B46355 /* main.m in Sources */,
+				376543AE1BD5793F0027D10D /* UIFont+VMFont.m in Sources */,
+				376543C11BD595640027D10D /* VMMenuItem.m in Sources */,
 				3775D9001BD3D86F00801F0B /* VMExchangeFacade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,10 +417,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		376543CF1BD5ADA80027D10D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				376543CE1BD5ADA80027D10D /* ru */,
+				376543D01BD5ADAC0027D10D /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		378AE9031BD190EC00B46355 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				378AE9041BD190EC00B46355 /* Base */,
+				376543C91BD5AD660027D10D /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -320,6 +439,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				378AE9091BD190EC00B46355 /* Base */,
+				376543CA1BD5AD660027D10D /* ru */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

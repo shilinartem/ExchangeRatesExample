@@ -40,22 +40,22 @@ objection_requires(@"facade")
         @strongify(self)
 
         NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-        [numberFormatter setNumberStyle: NSNumberFormatterCurrencyStyle];
+        [numberFormatter setNumberStyle: NSNumberFormatterDecimalStyle];
         self.exchangeRate = [numberFormatter stringFromNumber:todayModel.exchangeValue];
 
 
-        self.changesTitle = [self p_configurateProcentTitleWithTodayValue:todayModel.exchangeValue yesterdayValue:yesterdayModel.exchangeValue];
+        self.changesTitle = [self p_configurateProcentTitleWithTodayValue:todayModel.exchangeValue yesterdayValue:yesterdayModel.exchangeValue base:todayModel.fromCurrencyName];
 
         NSDate *yesterdayDate = [NSDate date];
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"HH:mm"];
         
-        self.updateTime = [NSString stringWithFormat:@"%@ %@",@"Обновлено", [formatter stringFromDate:yesterdayDate]];
+        self.updateTime = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"ОБНОВЛЕНО В", nil), [formatter stringFromDate:yesterdayDate]];
         
     } error:^(NSError *error) {
         @strongify(self)
         if ([self.delegate respondsToSelector:@selector(showErrorWithMessage:)]) {
-            [self.delegate showErrorWithMessage:@"Ошибка соеденения с интернетом"];
+            [self.delegate showErrorWithMessage:NSLocalizedString(@"Ошибка соеденения с интернетом", nil)];
         }
     }];
 
@@ -67,27 +67,38 @@ objection_requires(@"facade")
     }
 }
 
-
-
 #pragma mark - Private
 
-- (NSString *)p_configurateProcentTitleWithTodayValue:(NSNumber *)today yesterdayValue:(NSNumber *)yesterday {
+- (NSString *)p_configurateProcentTitleWithTodayValue:(NSNumber *)today yesterdayValue:(NSNumber *)yesterday base:(NSString *)base{
+    
     
     CGFloat todayValue = today.floatValue;
     CGFloat yesterdayValue = yesterday.floatValue;
     
     if (todayValue > yesterdayValue) {
-        return [NSString stringWithFormat:@"%f", [VMHomeScreenViewModel calculatePercentLargerNumber:todayValue fewer:yesterdayValue]];
+        return [NSString stringWithFormat:@"%@ %@ %@ %f %@",NSLocalizedString(@"Со вчерашнего дня", nil), [VMHomeScreenViewModel baseFormatter:base], NSLocalizedString(@"вырос на", nil), [VMHomeScreenViewModel calculatePercentLargerNumber:todayValue fewer:yesterdayValue], NSLocalizedString(@"процента", nil)];
     } else if (today.floatValue < yesterday.floatValue){
         self.changesRedColor = YES;
-        return [NSString stringWithFormat:@"%f", [VMHomeScreenViewModel calculatePercentLargerNumber:yesterdayValue fewer:todayValue]];
+        return [NSString stringWithFormat:@"%@ %@ %@ %f %@",NSLocalizedString(@"Со вчерашнего дня", nil), [VMHomeScreenViewModel baseFormatter:base], NSLocalizedString(@"упал на", nil), [VMHomeScreenViewModel calculatePercentLargerNumber:todayValue fewer:yesterdayValue], NSLocalizedString(@"процента", nil)];
     } else {
-        return @"Курс не изменился";
+        return NSLocalizedString(@"Со вчерашнего дня курс не изменился", nil);
+    }
+}
+
++ (NSString *)baseFormatter:(NSString *)base {
+    if ([base isEqualToString:@"RUB"]) {
+        return NSLocalizedString(@"рубль", nil);
+    } else if ([base isEqualToString:@"USD"]) {
+        return NSLocalizedString(@"доллар", nil);
+    } else if ([base isEqualToString:@"EUR"]) {
+        return NSLocalizedString(@"евро", nil);
+    } else {
+        return NSLocalizedString(@"валюта", nil);
     }
 }
 
 + (CGFloat)calculatePercentLargerNumber:(CGFloat)larger fewer:(CGFloat)fewer {
-    return ((larger - fewer) / ((larger - fewer) /2)) * 100;
+    return (larger - fewer) / (larger + fewer) / 2 * 100;
 }
 
 @end
