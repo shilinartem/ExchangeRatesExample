@@ -20,6 +20,9 @@ PODS:
   - AFNetworking/UIKit (2.6.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Mantle (2.0.5):
+    - Mantle/extobjc (= 2.0.5)
+  - Mantle/extobjc (2.0.5)
   - Objection (1.6.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -31,11 +34,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Mantle
   - Objection
   - ReactiveCocoa (~> 2.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
   Objection: ed03f2219cb22d2b5b893114219fe6c7e3263bde
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 

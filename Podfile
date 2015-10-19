@@ -5,4 +5,5 @@ target 'ExchangeRatesExample' do
 	pod 'ReactiveCocoa', '~> 2.5'
 	pod 'Objection'
 	pod 'AFNetworking'
+	pod 'Mantle'
 end

@@ -11,7 +11,7 @@
 #import <Objection/Objection.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
-static NSString * const VMAPIBaseUrl = @"http://fixer.io/";
+static NSString * const VMAPIBaseUrl = @"http://api.fixer.io/";
 
 @interface VMAPI ()
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
@@ -38,11 +38,10 @@ objection_register_singleton(VMAPI)
     @weakify(self)
     return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
         @strongify(self)
-        NSString *methodString;
         
         NSError *error = nil;
         NSString *fullPath = [[NSURL URLWithString:path relativeToURL:self.manager.baseURL] absoluteString];
-        NSMutableURLRequest *request = [[self.manager requestSerializer] requestWithMethod:methodString URLString:fullPath parameters:params error:&error];
+        NSMutableURLRequest *request = [[self.manager requestSerializer] requestWithMethod:method URLString:fullPath parameters:params error:&error];
         
         if (error) {
             [subscriber sendError:error];
@@ -57,7 +56,7 @@ objection_register_singleton(VMAPI)
             if (responseError) {
                 [subscriber sendError:responseError];
             } else {
-                [subscriber sendNext:RACTuplePack(responseObject, response)];
+                [subscriber sendNext:responseObject];
                 [subscriber sendCompleted];
             }
         }];

@@ -7,16 +7,41 @@
 //
 
 #import "VMHomeScreenViewController.h"
+#import <Objection/Objection.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "VMHomeScreenViewModel.h"
 
-@interface VMHomeScreenViewController ()
+@interface VMHomeScreenViewController ()<VMHomeScreenViewModelDelegate>
 
+@property (nonatomic, strong) VMHomeScreenViewModel *viewModel;
+@property (nonatomic, weak) IBOutlet UILabel *ligamentNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *exchangeRateLabel;
+@property (nonatomic, weak) IBOutlet UILabel *changesTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *updateTimeLabel;
 @end
 
 @implementation VMHomeScreenViewController
+objection_requires(@"viewModel")
+
+- (void)awakeFromObjection {
+    [super awakeFromObjection];
+    self.viewModel.delegate = self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [[JSObjection defaultInjector] injectDependencies:self];
+
+    
+    [self.viewModel loadDataWithType:VMExchangeValuesTypeUSDtoRUR];
+    
+    RAC(self, ligamentNameLabel.text) = [RACObserve(self, viewModel.ligamentName) deliverOnMainThread];
+    RAC(self, exchangeRateLabel.text) = [RACObserve(self, viewModel.exchangeRate) deliverOnMainThread];
+    RAC(self, changesTitleLabel.text) = [RACObserve(self, viewModel.changesTitle) deliverOnMainThread];
+    RAC(self, updateTimeLabel.text) = [[RACObserve(self, viewModel.updateTime) deliverOnMainThread] logAll];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3775D8E01BD2DDAC00801F0B /* VMAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8DF1BD2DDAC00801F0B /* VMAPI.m */; };
-		3775D8E31BD2DDBD00801F0B /* VMAPIAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8E21BD2DDBD00801F0B /* VMAPIAdapter.m */; };
-		3775D8E61BD2DE1100801F0B /* VMExchangeFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8E51BD2DE1100801F0B /* VMExchangeFacade.m */; };
-		3775D8EB1BD2DE6800801F0B /* VMHomeScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8EA1BD2DE6800801F0B /* VMHomeScreenViewModel.m */; };
-		3775D8EE1BD2DE8100801F0B /* VMHomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8ED1BD2DE8100801F0B /* VMHomeScreenViewController.m */; };
+		3775D8F41BD3D3F100801F0B /* VMExchangeRateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8F31BD3D3F100801F0B /* VMExchangeRateModel.m */; };
+		3775D8F71BD3D85700801F0B /* VMAPIAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8F61BD3D85700801F0B /* VMAPIAdapter.m */; };
+		3775D8FC1BD3D86200801F0B /* VMHomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8F91BD3D86200801F0B /* VMHomeScreenViewController.m */; };
+		3775D8FD1BD3D86200801F0B /* VMHomeScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8FB1BD3D86200801F0B /* VMHomeScreenViewModel.m */; };
+		3775D9001BD3D86F00801F0B /* VMExchangeFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D8FF1BD3D86F00801F0B /* VMExchangeFacade.m */; };
+		3775D9051BD3DBFC00801F0B /* VMExchangeValuesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775D9041BD3DBFC00801F0B /* VMExchangeValuesHelper.m */; };
 		378AE8FC1BD190EC00B46355 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 378AE8FB1BD190EC00B46355 /* main.m */; };
 		378AE8FF1BD190EC00B46355 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 378AE8FE1BD190EC00B46355 /* AppDelegate.m */; };
 		378AE9051BD190EC00B46355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378AE9031BD190EC00B46355 /* Main.storyboard */; };
@@ -25,14 +27,18 @@
 		19EE58C68380C800609C2165 /* libPods-ExchangeRatesExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExchangeRatesExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3775D8DE1BD2DDAC00801F0B /* VMAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMAPI.h; sourceTree = "<group>"; };
 		3775D8DF1BD2DDAC00801F0B /* VMAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMAPI.m; sourceTree = "<group>"; };
-		3775D8E11BD2DDBD00801F0B /* VMAPIAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMAPIAdapter.h; path = Adapters/VMAPIAdapter.h; sourceTree = "<group>"; };
-		3775D8E21BD2DDBD00801F0B /* VMAPIAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMAPIAdapter.m; path = Adapters/VMAPIAdapter.m; sourceTree = "<group>"; };
-		3775D8E41BD2DE1100801F0B /* VMExchangeFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMExchangeFacade.h; path = Facades/VMExchangeFacade.h; sourceTree = "<group>"; };
-		3775D8E51BD2DE1100801F0B /* VMExchangeFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMExchangeFacade.m; path = Facades/VMExchangeFacade.m; sourceTree = "<group>"; };
-		3775D8E91BD2DE6800801F0B /* VMHomeScreenViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMHomeScreenViewModel.h; path = Controllers/VMHomeScreenViewController/VMHomeScreenViewModel.h; sourceTree = "<group>"; };
-		3775D8EA1BD2DE6800801F0B /* VMHomeScreenViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMHomeScreenViewModel.m; path = Controllers/VMHomeScreenViewController/VMHomeScreenViewModel.m; sourceTree = "<group>"; };
-		3775D8EC1BD2DE8100801F0B /* VMHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMHomeScreenViewController.h; path = Controllers/VMHomeScreenViewController/VMHomeScreenViewController.h; sourceTree = "<group>"; };
-		3775D8ED1BD2DE8100801F0B /* VMHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMHomeScreenViewController.m; path = Controllers/VMHomeScreenViewController/VMHomeScreenViewController.m; sourceTree = "<group>"; };
+		3775D8F21BD3D3F100801F0B /* VMExchangeRateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMExchangeRateModel.h; sourceTree = "<group>"; };
+		3775D8F31BD3D3F100801F0B /* VMExchangeRateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMExchangeRateModel.m; sourceTree = "<group>"; };
+		3775D8F51BD3D85700801F0B /* VMAPIAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMAPIAdapter.h; sourceTree = "<group>"; };
+		3775D8F61BD3D85700801F0B /* VMAPIAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMAPIAdapter.m; sourceTree = "<group>"; };
+		3775D8F81BD3D86200801F0B /* VMHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMHomeScreenViewController.h; path = VMHomeScreenViewController/VMHomeScreenViewController.h; sourceTree = "<group>"; };
+		3775D8F91BD3D86200801F0B /* VMHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMHomeScreenViewController.m; path = VMHomeScreenViewController/VMHomeScreenViewController.m; sourceTree = "<group>"; };
+		3775D8FA1BD3D86200801F0B /* VMHomeScreenViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMHomeScreenViewModel.h; path = VMHomeScreenViewController/VMHomeScreenViewModel.h; sourceTree = "<group>"; };
+		3775D8FB1BD3D86200801F0B /* VMHomeScreenViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VMHomeScreenViewModel.m; path = VMHomeScreenViewController/VMHomeScreenViewModel.m; sourceTree = "<group>"; };
+		3775D8FE1BD3D86F00801F0B /* VMExchangeFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMExchangeFacade.h; sourceTree = "<group>"; };
+		3775D8FF1BD3D86F00801F0B /* VMExchangeFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMExchangeFacade.m; sourceTree = "<group>"; };
+		3775D9031BD3DBFC00801F0B /* VMExchangeValuesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMExchangeValuesHelper.h; sourceTree = "<group>"; };
+		3775D9041BD3DBFC00801F0B /* VMExchangeValuesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMExchangeValuesHelper.m; sourceTree = "<group>"; };
 		378AE8F61BD190EC00B46355 /* ExchangeRatesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRatesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378AE8FA1BD190EC00B46355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		378AE8FB1BD190EC00B46355 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,19 +68,19 @@
 		3775D8E71BD2DE1E00801F0B /* Facades */ = {
 			isa = PBXGroup;
 			children = (
-				3775D8E41BD2DE1100801F0B /* VMExchangeFacade.h */,
-				3775D8E51BD2DE1100801F0B /* VMExchangeFacade.m */,
+				3775D8FE1BD3D86F00801F0B /* VMExchangeFacade.h */,
+				3775D8FF1BD3D86F00801F0B /* VMExchangeFacade.m */,
 			);
-			name = Facades;
+			path = Facades;
 			sourceTree = "<group>";
 		};
 		3775D8E81BD2DE2700801F0B /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
-				3775D8E11BD2DDBD00801F0B /* VMAPIAdapter.h */,
-				3775D8E21BD2DDBD00801F0B /* VMAPIAdapter.m */,
+				3775D8F51BD3D85700801F0B /* VMAPIAdapter.h */,
+				3775D8F61BD3D85700801F0B /* VMAPIAdapter.m */,
 			);
-			name = Adapters;
+			path = Adapters;
 			sourceTree = "<group>";
 		};
 		3775D8EF1BD2DE8800801F0B /* Controllers */ = {
@@ -82,18 +88,36 @@
 			children = (
 				3775D8F01BD2DE9100801F0B /* VMHomeScreenViewController */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		3775D8F01BD2DE9100801F0B /* VMHomeScreenViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3775D8E91BD2DE6800801F0B /* VMHomeScreenViewModel.h */,
-				3775D8EA1BD2DE6800801F0B /* VMHomeScreenViewModel.m */,
-				3775D8EC1BD2DE8100801F0B /* VMHomeScreenViewController.h */,
-				3775D8ED1BD2DE8100801F0B /* VMHomeScreenViewController.m */,
+				3775D8F81BD3D86200801F0B /* VMHomeScreenViewController.h */,
+				3775D8F91BD3D86200801F0B /* VMHomeScreenViewController.m */,
+				3775D8FA1BD3D86200801F0B /* VMHomeScreenViewModel.h */,
+				3775D8FB1BD3D86200801F0B /* VMHomeScreenViewModel.m */,
 			);
 			name = VMHomeScreenViewController;
+			sourceTree = "<group>";
+		};
+		3775D8F11BD3D3C800801F0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3775D8F21BD3D3F100801F0B /* VMExchangeRateModel.h */,
+				3775D8F31BD3D3F100801F0B /* VMExchangeRateModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3775D9021BD3DBB400801F0B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3775D9031BD3DBFC00801F0B /* VMExchangeValuesHelper.h */,
+				3775D9041BD3DBFC00801F0B /* VMExchangeValuesHelper.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		378AE8ED1BD190EC00B46355 = {
@@ -117,6 +141,8 @@
 		378AE8F81BD190EC00B46355 /* ExchangeRatesExample */ = {
 			isa = PBXGroup;
 			children = (
+				3775D9021BD3DBB400801F0B /* Helpers */,
+				3775D8F11BD3D3C800801F0B /* Models */,
 				3775D8E71BD2DE1E00801F0B /* Facades */,
 				3775D8E81BD2DE2700801F0B /* Adapters */,
 				3775D8EF1BD2DE8800801F0B /* Controllers */,
@@ -267,13 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3775D8FD1BD3D86200801F0B /* VMHomeScreenViewModel.m in Sources */,
 				3775D8E01BD2DDAC00801F0B /* VMAPI.m in Sources */,
-				3775D8E61BD2DE1100801F0B /* VMExchangeFacade.m in Sources */,
-				3775D8EE1BD2DE8100801F0B /* VMHomeScreenViewController.m in Sources */,
-				3775D8EB1BD2DE6800801F0B /* VMHomeScreenViewModel.m in Sources */,
+				3775D8F41BD3D3F100801F0B /* VMExchangeRateModel.m in Sources */,
 				378AE8FF1BD190EC00B46355 /* AppDelegate.m in Sources */,
+				3775D8F71BD3D85700801F0B /* VMAPIAdapter.m in Sources */,
+				3775D8FC1BD3D86200801F0B /* VMHomeScreenViewController.m in Sources */,
+				3775D9051BD3DBFC00801F0B /* VMExchangeValuesHelper.m in Sources */,
 				378AE8FC1BD190EC00B46355 /* main.m in Sources */,
-				3775D8E31BD2DDBD00801F0B /* VMAPIAdapter.m in Sources */,
+				3775D9001BD3D86F00801F0B /* VMExchangeFacade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

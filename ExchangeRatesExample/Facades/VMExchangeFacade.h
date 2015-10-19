@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VMExchangeValuesHelper.h"
+
+@class RACSignal;
 
 extern NSString *const VMExchangeFacadeErrorDomain;
 
@@ -15,16 +18,9 @@ typedef NS_ENUM(NSUInteger, VMExchangeFacadeErrorCode) {
     VMExchangeFacadeErrorCodeUndefined,
 };
 
-typedef NS_ENUM(NSUInteger, VMExchangeFacadeMonetaryCurrencyType) {
-    VMExchangeFacadeMonetaryCurrencyTypeNone,
-    VMExchangeFacadeMonetaryCurrencyTypeUSDtoRUR,
-    VMExchangeFacadeMonetaryCurrencyTypeRURtoUSD,
-    VMExchangeFacadeMonetaryCurrencyTypeEURtoRUR,
-    VMExchangeFacadeMonetaryCurrencyTypeRURtoEUR,
-    VMExchangeFacadeMonetaryCurrencyTypeUSDtoEUR,
-    VMExchangeFacadeMonetaryCurrencyTypeEURtoUSD,
-};
-
 @interface VMExchangeFacade : NSObject
+
+- (RACSignal *)todayRateWithType:(VMExchangeValuesType)type;
+- (RACSignal *)yesterdayRateWithType:(VMExchangeValuesType)type;
 
 @end
