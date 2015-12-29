@@ -1,0 +1,11 @@
+build/
+xcuserdata
+*.xccheckout
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+.DS_Store
+*.orig
+.idea
+Pods/

@@ -30,7 +30,19 @@
 		378AE9071BD190EC00B46355 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378AE9061BD190EC00B46355 /* Images.xcassets */; };
 		378AE90A1BD190EC00B46355 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378AE9081BD190EC00B46355 /* LaunchScreen.xib */; };
 		38FE48C16E4EA8A6F1C9B910 /* libPods-ExchangeRatesExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EE58C68380C800609C2165 /* libPods-ExchangeRatesExample.a */; };
+		ACAB4AD41C32C76D00961E17 /* ExchangeRatesExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAB4AD31C32C76D00961E17 /* ExchangeRatesExampleTests.m */; };
+		E5156BA91EE4673FE0AB1E7B /* libPods-ExchangeRatesExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD9DF07058C19B8A5056B65 /* libPods-ExchangeRatesExampleTests.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACAB4AD61C32C76D00961E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 378AE8EE1BD190EC00B46355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 378AE8F51BD190EC00B46355;
+			remoteInfo = ExchangeRatesExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0CEECB9785BF5F9A5CD2BE9C /* Pods-ExchangeRatesExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRatesExampleTests/Pods-ExchangeRatesExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +89,9 @@
 		378AE9091BD190EC00B46355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7D703A24A8B171B7ED972132 /* Pods-ExchangeRatesExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRatesExample/Pods-ExchangeRatesExample.debug.xcconfig"; sourceTree = "<group>"; };
 		7DD9DF07058C19B8A5056B65 /* libPods-ExchangeRatesExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExchangeRatesExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACAB4AD11C32C76D00961E17 /* ExchangeRatesExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeRatesExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACAB4AD31C32C76D00961E17 /* ExchangeRatesExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangeRatesExampleTests.m; sourceTree = "<group>"; };
+		ACAB4AD51C32C76D00961E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD993422E1232553FB4B52C1 /* Pods-ExchangeRatesExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRatesExample/Pods-ExchangeRatesExample.release.xcconfig"; sourceTree = "<group>"; };
 		F0AD62F1BB38EF98FA11A602 /* Pods-ExchangeRatesExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRatesExampleTests/Pods-ExchangeRatesExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +102,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				38FE48C16E4EA8A6F1C9B910 /* libPods-ExchangeRatesExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACAB4ACE1C32C76D00961E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5156BA91EE4673FE0AB1E7B /* libPods-ExchangeRatesExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +244,7 @@
 			children = (
 				376543CF1BD5ADA80027D10D /* Localizable.strings */,
 				378AE8F81BD190EC00B46355 /* ExchangeRatesExample */,
+				ACAB4AD21C32C76D00961E17 /* ExchangeRatesExampleTests */,
 				378AE8F71BD190EC00B46355 /* Products */,
 				E26F75092A82DD9244AE14EF /* Pods */,
 				F2CB6698F0E77BF8182F2801 /* Frameworks */,
@@ -231,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				378AE8F61BD190EC00B46355 /* ExchangeRatesExample.app */,
+				ACAB4AD11C32C76D00961E17 /* ExchangeRatesExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,6 +291,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ACAB4AD21C32C76D00961E17 /* ExchangeRatesExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACAB4AD31C32C76D00961E17 /* ExchangeRatesExampleTests.m */,
+				ACAB4AD51C32C76D00961E17 /* Info.plist */,
+			);
+			path = ExchangeRatesExampleTests;
+			sourceTree = "<group>";
+		};
 		E26F75092A82DD9244AE14EF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +332,7 @@
 				378AE8F31BD190EC00B46355 /* Frameworks */,
 				378AE8F41BD190EC00B46355 /* Resources */,
 				90BDE919E13F77A29237CDE3 /* Copy Pods Resources */,
+				D31E63866BAF0514F3E293FD /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +342,27 @@
 			productName = ExchangeRatesExample;
 			productReference = 378AE8F61BD190EC00B46355 /* ExchangeRatesExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ACAB4AD01C32C76D00961E17 /* ExchangeRatesExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACAB4ADA1C32C76D00961E17 /* Build configuration list for PBXNativeTarget "ExchangeRatesExampleTests" */;
+			buildPhases = (
+				80BE6F270DA7CB204ABF645F /* Check Pods Manifest.lock */,
+				ACAB4ACD1C32C76D00961E17 /* Sources */,
+				ACAB4ACE1C32C76D00961E17 /* Frameworks */,
+				ACAB4ACF1C32C76D00961E17 /* Resources */,
+				A4FACF46F583DEE4CE8BCF63 /* Embed Pods Frameworks */,
+				96316F5028C92A1F7A1221D9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACAB4AD71C32C76D00961E17 /* PBXTargetDependency */,
+			);
+			name = ExchangeRatesExampleTests;
+			productName = ExchangeRatesExampleTests;
+			productReference = ACAB4AD11C32C76D00961E17 /* ExchangeRatesExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -320,6 +376,10 @@
 				TargetAttributes = {
 					378AE8F51BD190EC00B46355 = {
 						CreatedOnToolsVersion = 6.4;
+					};
+					ACAB4AD01C32C76D00961E17 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 378AE8F51BD190EC00B46355;
 					};
 				};
 			};
@@ -337,6 +397,7 @@
 			projectRoot = "";
 			targets = (
 				378AE8F51BD190EC00B46355 /* ExchangeRatesExample */,
+				ACAB4AD01C32C76D00961E17 /* ExchangeRatesExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,9 +418,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACAB4ACF1C32C76D00961E17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		80BE6F270DA7CB204ABF645F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		90BDE919E13F77A29237CDE3 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +456,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeRatesExample/Pods-ExchangeRatesExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96316F5028C92A1F7A1221D9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeRatesExampleTests/Pods-ExchangeRatesExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4FACF46F583DEE4CE8BCF63 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeRatesExampleTests/Pods-ExchangeRatesExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D31E63866BAF0514F3E293FD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeRatesExample/Pods-ExchangeRatesExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F5F120269C9570808162C45D /* Check Pods Manifest.lock */ = {
@@ -414,7 +542,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACAB4ACD1C32C76D00961E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACAB4AD41C32C76D00961E17 /* ExchangeRatesExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACAB4AD71C32C76D00961E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 378AE8F51BD190EC00B46355 /* ExchangeRatesExample */;
+			targetProxy = ACAB4AD61C32C76D00961E17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		376543CF1BD5ADA80027D10D /* Localizable.strings */ = {
@@ -553,6 +697,36 @@
 			};
 			name = Release;
 		};
+		ACAB4AD81C32C76D00961E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEECB9785BF5F9A5CD2BE9C /* Pods-ExchangeRatesExampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = ExchangeRatesExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shilin.ExchangeRatesExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeRatesExample.app/ExchangeRatesExample";
+			};
+			name = Debug;
+		};
+		ACAB4AD91C32C76D00961E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0AD62F1BB38EF98FA11A602 /* Pods-ExchangeRatesExampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExchangeRatesExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shilin.ExchangeRatesExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeRatesExample.app/ExchangeRatesExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +744,15 @@
 			buildConfigurations = (
 				378AE91A1BD190ED00B46355 /* Debug */,
 				378AE91B1BD190ED00B46355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACAB4ADA1C32C76D00961E17 /* Build configuration list for PBXNativeTarget "ExchangeRatesExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACAB4AD81C32C76D00961E17 /* Debug */,
+				ACAB4AD91C32C76D00961E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

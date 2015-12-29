@@ -7,3 +7,10 @@ target 'ExchangeRatesExample' do
 	pod 'AFNetworking'
 	pod 'Mantle'
 end
+
+target 'ExchangeRatesExampleTests', :exclusive => true do
+    inhibit_all_warnings!
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'OCMockito'
+end
