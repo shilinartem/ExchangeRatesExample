@@ -11,7 +11,7 @@
 #import <Objection/Objection.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
-static NSString * const VMAPIBaseUrl = @"http://api.fixer.io/";
+static NSString * const VMAPIBaseUrl = @"https://api.fixer.io/";
 
 @interface VMAPI ()
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
